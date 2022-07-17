@@ -1,0 +1,59 @@
+{
+	"$schema": "./content.schema.json",
+	"general": {
+		"description": "I'm Miklós, a {AGE} years old frontend developer wannabe, currently studying computer science at BME.",
+		"socials": {
+			"github": "https://github.com/perryd01",
+			"twitter": "https://twitter.com/daniel_miklos",
+			"instagram": "https://instagram.com/ket.hexameter",
+			"linkedin": "https://www.linkedin.com/in/miklos-daniel/"
+		}
+	},
+	"coding": {
+		"languages": ["golang", "nodejs", "nextjs", "tailwindcss", "react", "figma", "vscode"],
+		"projects": [
+			{
+				"title": "miklosdaniel.hu",
+				"date": "2022-07-17",
+				"text": "My personal site made using SvelteKit and TailwindCss",
+				"link": "https://miklosdaniel.hu",
+				"tags": ["svelte", "tailwindcss"]
+			},
+			{
+				"title": "Unaswrappergo",
+				"date": "2021-09-10",
+				"link": "https://github.com/perryd01/unaswrappergo",
+				"text": "This is an unofficial API wrapper lib for Unas webshop written for Golang. The main goal is to make programming stuff using Unas API more convinient.",
+				"tags": ["api", "golang"]
+			},
+			{
+				"title": "Influenceair Podcast website",
+				"date": "2022-01-23",
+				"link": "https://www.influenceair.hu/",
+				"text": "The website of a podcast hosted by Starnetwork.hu. It was made using Next.js and Tailwindcss.",
+				"tags": ["nextjs", "react", "tailwind"]
+			},
+			{
+				"title": "Vaccination Slot smart contract",
+				"date": "2022-05-01",
+				"link": "https://github.com/perryd01/vaccination-slot",
+				"text": "Blockchain Technologies and Applications (VIMIAV17) homework using Go and Hyperledger",
+				"tags": ["golang", "hyperledger fabric"]
+			}
+		]
+	},
+	"photography": {
+		"images": [
+			{
+				"date": "2021-09-10",
+				"filename": "",
+				"film": ""
+			},
+			{
+				"date": "2021-09-10",
+				"filename": "",
+				"film": ""
+			}
+		]
+	}
+}
