@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	export const load: Load = ({}) => {
+	export const load: Load = () => {
 		return {
 			stuff: {
 				title: 'Coding'
@@ -10,7 +10,6 @@
 
 <script lang="ts">
 	import Title from '$lib/components/content/Title.svelte';
-	import NothingHere from '$lib/components/placeholder/NothingHere.svelte';
 	import ProjectPreview from '$lib/components/project/ProjectPreview.svelte';
 	import content from '$lib/content/content.json';
 	import type { Load } from '@sveltejs/kit';

@@ -6,10 +6,12 @@
 	import '../app.css';
 
 	import { page } from '$app/stores';
+	import { data } from '$lib/util/seo';
 </script>
 
 <svelte:head>
 	<title>{`${$page.stuff.title} - miklosdaniel.hu`}</title>
+	{@html data}
 </svelte:head>
 
 <div class="bg-app-background text-white ">
