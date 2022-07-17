@@ -4,7 +4,7 @@
 	export { className as class };
 </script>
 
-<div class={clsx(className, 'p-4 w-full h-full')}>
+<div class={clsx(className, 'p-4 ')}>
 	<main class="">
 		<slot />
 	</main>
