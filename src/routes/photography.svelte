@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	export const load: Load = ({}) => {
+	export const load: Load = () => {
 		return {
 			stuff: {
 				title: 'Photography'
