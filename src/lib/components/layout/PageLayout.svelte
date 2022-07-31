@@ -5,7 +5,7 @@
 </script>
 
 <div class={clsx(className, 'p-4 ')}>
-	<main class="">
+	<main class="w-full">
 		<slot />
 	</main>
 </div>
