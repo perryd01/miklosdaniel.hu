@@ -31,7 +31,7 @@
 	{#each album.fields.photos as photo}
 		<img
 			class="max-h-[600px] aspect-auto"
-			src="{photo.fields.file ? `https:${photo.fields.file.url}` : 'placekitten.com/200/200'}}"
+			src={photo.fields.file ? `https:${photo.fields.file.url}` : 'placekitten.com/200/200'}
 			alt={album.fields.title}
 		/>
 	{/each}
