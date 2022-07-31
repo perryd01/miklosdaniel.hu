@@ -17,7 +17,7 @@
 <div class="bg-app-background text-white ">
 	<div class="flex flex-col max-w-5xl mx-auto min-h-screen">
 		<Header />
-		<PageLayout class="flex flex-grow ">
+		<PageLayout class="flex flex-1">
 			<slot />
 		</PageLayout>
 		<Footer />
