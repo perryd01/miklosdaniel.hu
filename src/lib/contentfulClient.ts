@@ -19,8 +19,6 @@ export const getAlbums = async () => {
 		return bDate.getTime() - aDate.getTime();
 	});
 
-	console.log(albums.items[1].fields.date);
-
 	return albums;
 };
 
