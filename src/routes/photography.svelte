@@ -30,7 +30,9 @@
 			<div class="overflow-hidden">
 				<img
 					class="aspect-square object-cover hover:scale-110 transiton duration-200"
-					src={`https:${album.fields.preview.fields.file.url}`}
+					src={album.fields.preview.fields.file
+						? `https:${album.fields.preview.fields.file.url}`
+						: 'placekitten.com/200/200'}
 					alt={album.fields.title}
 				/>
 			</div>

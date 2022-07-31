@@ -1,7 +1,8 @@
-import * as contentful from 'contentful';
+import contentful from 'contentful';
+const { createClient } = contentful;
 import type { IAlbumFields } from './@types/contentful';
 
-export const client = contentful.createClient({
+export const client = createClient({
 	space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
 	accessToken: import.meta.env.VITE_CONTENTFUL_DELIVERY_API_TOKEN
 });
