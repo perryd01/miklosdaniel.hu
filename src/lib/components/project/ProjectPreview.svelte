@@ -7,7 +7,7 @@
 </script>
 
 <a href={link} target="_blank" rel="noreferrer">
-	<div class="p-4 rounded-xl bg-app-secondary text-white">
+	<div class="p-4 rounded-xl bg-app-secondary text-white h-full w-full">
 		<Title heading={3}>{title}</Title>
 		<div class="mb-2 flex flex-row gap-4 items-center justify-start">
 			{#each tags as tag}
