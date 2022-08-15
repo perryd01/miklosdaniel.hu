@@ -45,7 +45,7 @@
 				"date:": "2022-08-10",
 				"link": "https://github.com/simonyiszk/bercsenyi-fotokor-web",
 				"text": "Work in progress -  a website where people can submit photos according to the latest one on the site. The goal is that the photos are connected like a chain.",
-				"tags": ["typescript", "react", "nextjs", "tailwindcss", "firebase"]
+				"tags": ["typescript", "react", "firebase"]
 			}
 		]
 	},
