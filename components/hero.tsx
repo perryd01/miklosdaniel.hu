@@ -16,7 +16,7 @@ const Hero = () => {
           src={"/assets/profile.png"}
           className="shrink-0 grow-0 rounded-full"
           alt="Picture of the author"
-          fill="true"
+          fill={true}
         />
       </div>
     </section>
