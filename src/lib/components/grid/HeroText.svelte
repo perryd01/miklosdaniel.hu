@@ -25,8 +25,6 @@
 				return 'text-2xl';
 		}
 	}
-
-	console.log(title, title.length);
 </script>
 
 <h1 class={clsx('font-bold text-white', getClassFromLength())}>{title}</h1>

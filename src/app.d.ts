@@ -8,6 +8,9 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	declare const __PACKAGE__: Record<string, unknown>;
+	declare const __BUILDTIME__: string;
 }
 
 export {};
