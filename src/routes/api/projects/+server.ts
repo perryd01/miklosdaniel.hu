@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { Project } from '$lib/types';
+import { dev } from '$app/environment';
 
 async function getPosts() {
 	let posts: Project[] = [];
@@ -17,9 +18,9 @@ async function getPosts() {
 		}
 	}
 
-	posts = posts.sort(
-		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
-	);
+	posts = posts
+		.filter((p) => dev || p.published)
+		.sort((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime());
 
 	return posts;
 }
