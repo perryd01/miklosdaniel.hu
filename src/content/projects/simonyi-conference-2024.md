@@ -1,10 +1,14 @@
 ---
 title: Simonyi Conference 2024
 heroTitle: Simonyi Conference 2024
-description: First post.
-date: '2023-4-14'
+description: My experience designing a website for the XXI. Simonyi Conference.
+date: '2024-4-14'
 categories:
   - sveltekit
   - svelte
-published: true
+published: false
+
+links:
+  github: https://github.com/simonyiszk/konf-web-2024
+  website: https://konferencia.simonyi.bme.hu
 ---
