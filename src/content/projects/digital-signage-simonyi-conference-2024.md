@@ -4,8 +4,8 @@ heroTitle: Digital Signage for Simonyi Conference
 description: Implementing a basic UI for the XXI. Simonyi Conference in Svelte which was seen by 500+ peope during the event.
 date: '2024-3-14'
 categories:
-  - sveltekit
   - svelte
+  - siema
 published: false
 
 links:

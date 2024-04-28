@@ -2,6 +2,7 @@
 	import { formatDate } from '$lib/utils';
 	import { Dot } from 'lucide-svelte';
 	import type { PageData } from './$types';
+	import TechnologyTag from '$lib/components/projects/TechnologyTag.svelte';
 	export let data: PageData;
 </script>
 
@@ -14,10 +15,16 @@
 		{#each data.projects as project}
 			<li class="project">
 				<a href={`/projects/${project.slug}`} class="title">{project.title}</a>
+
 				<div class="flex flex-row items-center date">
 					<p>{project.readingTime.text}</p>
 					<Dot />
 					<p>Published at {formatDate(project.date)}</p>
+				</div>
+				<div class="tags">
+					{#each project.categories || [] as tag}
+						<TechnologyTag {tag} />
+					{/each}
 				</div>
 				<p class="description">{project.description}</p>
 			</li>
@@ -39,6 +46,13 @@
 	}
 
 	.description {
-		@apply mt-4;
+		@apply mt-2;
+	}
+
+	.tags {
+		@apply flex flex-wrap gap-2;
+	}
+	.tag {
+		@apply p-1 bg-gray-800 text-gray-200 rounded-md;
 	}
 </style>

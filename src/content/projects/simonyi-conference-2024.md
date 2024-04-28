@@ -4,8 +4,7 @@ heroTitle: Simonyi Conference 2024
 description: My experience designing a website for the XXI. Simonyi Conference.
 date: '2024-4-14'
 categories:
-  - sveltekit
-  - svelte
+  - figma
 published: false
 
 links:

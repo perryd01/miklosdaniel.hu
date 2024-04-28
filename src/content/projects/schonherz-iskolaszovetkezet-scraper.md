@@ -5,6 +5,8 @@ description: 'Golang script for scraping job ads on Schönherz Iskolaszövetkeze
 date: '2022-05-21'
 categories:
   - golang
+  - webscraping
+
 published: true
 links:
   github: https://github.com/perryd01/sch-isk-scraper

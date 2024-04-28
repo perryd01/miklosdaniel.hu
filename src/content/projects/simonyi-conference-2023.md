@@ -4,8 +4,9 @@ heroTitle: Simonyi Conference 2023
 description: My experience designing and developing a website for the XX. Simonyi Conference.
 date: '2023-4-14'
 categories:
-  - sveltekit
-  - svelte
+  - figma
+  - next.js
+  - react
 published: false
 
 links:

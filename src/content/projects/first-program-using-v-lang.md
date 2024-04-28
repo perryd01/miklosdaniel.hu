@@ -4,8 +4,7 @@ heroTitle: GCD in Vlang
 description: Trying out a new programming called Vlang by implementing the Greatest Common Divisor algorithm.
 date: '2022-4-17'
 categories:
-  - sveltekit
-  - svelte
+  - vlang
 published: true
 
 links:

@@ -4,8 +4,8 @@ heroTitle: miklosdaniel.hu
 description: First post.
 date: '2024-5-20'
 categories:
-  - sveltekit
   - svelte
+  - mdx
 published: false
 
 links:

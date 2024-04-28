@@ -4,8 +4,7 @@ heroTitle: unaswrappergo
 description: An API wrapper for a hungarian webshop platform called Unas. Using this library you can fetch data parallel from the server, something you cannot do on the webui.
 date: '2021-01-09'
 categories:
-  - sveltekit
-  - svelte
+  - golang
 published: true
 links:
   github: https://github.com/perryd01/unaswrappergo

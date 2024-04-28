@@ -15,6 +15,8 @@ export type Project = {
 	published?: boolean;
 
 	readingTime: ReadingTime;
+
+	categories?: string[];
 };
 
 export type ProjectLinks = {
