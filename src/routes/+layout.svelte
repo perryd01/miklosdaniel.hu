@@ -6,7 +6,15 @@
 </script>
 
 <div class="flex flex-col justify-between font-inter min-h-screen gap-8 text-white">
-	<Header class="px-4" />
+	<Header
+		paths={[
+			{
+				label: 'Projects',
+				href: '/projects'
+			}
+		]}
+		class="px-4"
+	/>
 	<main class="grow max-w-screen-lg mx-auto w-full px-4">
 		<slot />
 	</main>
