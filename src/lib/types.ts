@@ -13,9 +13,18 @@ export type Project = {
 
 	links?: ProjectLinks;
 	published?: boolean;
+
+	readingTime: ReadingTime;
 };
 
 export type ProjectLinks = {
 	github?: string;
 	website?: string;
+};
+
+export type ReadingTime = {
+	text: string;
+	minutes: number;
+	words: number;
+	time: number;
 };

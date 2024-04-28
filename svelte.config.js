@@ -2,9 +2,13 @@ import adapter from '@sveltejs/adapter-auto';
 import { mdsvex } from 'mdsvex';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+import readingTime from 'mdsvex-reading-time';
+
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.svelte.md', '.md', '.svx']
+	extensions: ['.svelte.md', '.md', '.svx'],
+	remarkPlugins: [readingTime],
+	rehypePlugins: []
 };
 
 /** @type {import('@sveltejs/kit').Config} */

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import { Dot } from 'lucide-svelte';
 	import type { PageData } from './$types';
 	export let data: PageData;
 </script>
@@ -13,7 +14,11 @@
 		{#each data.projects as project}
 			<li class="project">
 				<a href={`/projects/${project.slug}`} class="title">{project.title}</a>
-				<p class="date">{formatDate(project.date)}</p>
+				<div class="flex flex-row items-center date">
+					<p>{project.readingTime.text}</p>
+					<Dot />
+					<p>Published at {formatDate(project.date)}</p>
+				</div>
 				<p class="description">{project.description}</p>
 			</li>
 		{/each}
