@@ -10,4 +10,12 @@ export type Project = {
 	order: number;
 	col?: number;
 	row?: number;
+
+	links?: ProjectLinks;
+	published?: boolean;
+};
+
+export type ProjectLinks = {
+	github?: string;
+	website?: string;
 };
