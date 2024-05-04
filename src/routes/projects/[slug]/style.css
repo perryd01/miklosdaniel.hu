@@ -1,0 +1,28 @@
+article.prz {
+    @apply mx-auto max-w-[50em];
+}
+
+article.prz {
+    h1 {
+        @apply lg:text-5xl text-3xl font-bold;
+	}
+    
+    h2 {
+        @apply lg:text-4xl text-2xl font-bold;
+    }
+
+    h3 {
+        @apply lg:text-3xl text-xl font-bold;
+    
+    }
+
+    p {
+        @apply text-lg my-4;
+    }
+
+    pre {
+        @apply rounded-2xl p-4 my-4 overflow-x-scroll;
+    }
+
+    
+}
