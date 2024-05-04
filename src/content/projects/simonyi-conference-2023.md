@@ -106,7 +106,7 @@ module.exports = {
   <AnimatedColorGradient start={gradient[0]} end={gradient[1]} />
 </div>
 
-<ImageGroup images={["/content/2023/konf-analytics.png"]} description="Statistics of website traffic 3 weeks before the event" />
+<ImageGroup images={["/content/2023/konf-analytics.webp"]} description="Statistics of website traffic 3 weeks before the event" />
 
 Since Google Analytics is often blocked by several browser extensions, we chose to use [Umami](https://umami.is/) for tracking traffic on our website. Umami is a simple, fast, privacy-focused alternative to Google Analytics.
 
