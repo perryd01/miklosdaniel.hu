@@ -7,6 +7,7 @@ categories:
   - svelte
   - siema
 published: false
+important: true
 
 links:
   github: https://github.com/simonyiszk/konf-infopanel-2024

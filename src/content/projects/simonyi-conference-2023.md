@@ -8,6 +8,7 @@ categories:
   - next.js
   - react
 published: false
+important: true
 
 links:
   github: https://github.com/simonyiszk/konf-web-2023

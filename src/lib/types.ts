@@ -17,6 +17,8 @@ export type Project = {
 	readingTime: ReadingTime;
 
 	categories?: string[];
+
+	important?: boolean;
 };
 
 export type ProjectLinks = {
