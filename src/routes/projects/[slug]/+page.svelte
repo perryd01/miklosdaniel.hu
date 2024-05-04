@@ -31,7 +31,7 @@
 		<div class="flex flex-row items-center mt-2 justify-center">
 			<p>{data.meta.readingTime.text}</p>
 			<Dot />
-			<p>Published at {formatDate(data.meta.date)}</p>
+			<p>Published at <time datetime={data.meta.date}>{formatDate(data.meta.date)}</time></p>
 		</div>
 		<ProjectLinks links={data.meta.links} />
 	</hgroup>

@@ -2,7 +2,7 @@
 title: Greatest Common Divisor program in Vlang
 heroTitle: GCD in Vlang
 description: Trying out a new programming called Vlang by implementing the Greatest Common Divisor algorithm.
-date: '2022-4-17'
+date: '2022-04-17'
 categories:
   - vlang
 published: true
