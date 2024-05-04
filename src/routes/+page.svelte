@@ -7,6 +7,8 @@
 
 	export let data;
 
+	const importantProjects = data.projects.filter((x) => x.important);
+
 	let animateFlag = false;
 
 	onMount(() => (animateFlag = true));
@@ -31,8 +33,8 @@
 		<Construction />
 	</section>
 
-	{#if data.projects}
-		<ListProjects compact projects={data.projects.filter((x) => x.important)}>
+	{#if importantProjects}
+		<ListProjects compact projects={importantProjects}>
 			<h2 slot="title" class="text-4xl font-medium">Recent Projects</h2>
 			<a slot="nav-button" href="/projects" class="text-xl font-medium">View all my projects</a>
 		</ListProjects>
