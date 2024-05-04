@@ -25,6 +25,6 @@
 
 <style lang="postcss">
 	.bg {
-		@apply fixed inset-0 h-full w-full bg-black bg-[radial-gradient(#ffffff,transparent_1px)] [background-size:16px_16px] -z-50;
+		@apply fixed inset-0 h-full w-full bg-black bg-[radial-gradient(#999,transparent_1px)] md:bg-[radial-gradient(#ffffff,transparent_1px)] md:[background-size:16px_16px] [background-size:20px_20px] -z-50;
 	}
 </style>
