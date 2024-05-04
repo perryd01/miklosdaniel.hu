@@ -5,6 +5,8 @@
 
 	export let data;
 
+	import { url } from '$lib/config';
+
 	import './style.css';
 </script>
 
@@ -14,7 +16,11 @@
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
 	<meta property="og:type" content="blog" />
+	<meta property="og:image" content={`${url}/projects/${data.slug}/preview.png`} />
 </svelte:head>
+
+<!-- This is a hidden image to be used as a preview for social media -->
+<img src="/projects/{data.slug}/preview.png" alt="Preview" class="hidden" />
 
 <article class="prz">
 	<hgroup class="mb-8">
