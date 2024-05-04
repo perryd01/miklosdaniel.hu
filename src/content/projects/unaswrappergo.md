@@ -15,9 +15,4 @@ An API wrapper for a hungarian webshop platform called Unas. Using this library 
 
 Using this you can confidently fetch data from the Unas API using Golang.
 
-You can:
-
-- authenticate using api key
-- fetch products
-- fetch categories
-- fetch storage data
+You can authenticate using an api key, fetch products, categories and storage data.
