@@ -4,26 +4,33 @@
 	export let links: ProjectLinks | undefined;
 
 	import { Earth, Github } from 'lucide-svelte';
+
+	const elements = [
+		{
+			name: 'GitHub',
+			Icon: Github,
+			link: links?.github
+		},
+		{
+			name: 'Website',
+			Icon: Earth,
+			link: links?.website
+		}
+	];
 </script>
 
 <section class="links">
 	<ul>
-		{#if links?.github}
-			<li>
-				<a href={links?.github} target="_blank" rel="noopener noreferrer" alt="asd">
-					<Github />
-					<span>GitHub</span></a
-				>
-			</li>
-		{/if}
-		{#if links?.website}
-			<li>
-				<a href={links?.website} target="_blank" rel="noopener noreferrer">
-					<Earth />
-					<span>Website</span>
-				</a>
-			</li>
-		{/if}
+		{#each elements as { name, Icon, link }}
+			{#if link}
+				<li>
+					<a href={link} target="_blank" rel="noopener noreferrer">
+						<Icon />
+						<span>{name}</span>
+					</a>
+				</li>
+			{/if}
+		{/each}
 	</ul>
 </section>
 
