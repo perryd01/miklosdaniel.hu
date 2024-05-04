@@ -21,7 +21,11 @@ article.prz {
     }
 
     pre {
-        @apply rounded-2xl p-4 my-4 overflow-x-scroll;
+        @apply rounded-2xl p-4 my-4 overflow-x-auto;
+    }
+
+    img {
+        @apply rounded-lg
     }
 
     
