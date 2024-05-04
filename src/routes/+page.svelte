@@ -1,10 +1,9 @@
 <script lang="ts">
-	import Grid from '$lib/components/grid';
 	import ListProjects from '$lib/components/projects/ListProjects.svelte';
 
 	import * as config from '$lib/config';
+	import { Construction } from 'lucide-svelte';
 	import { onMount } from 'svelte';
-	import { fade, slide } from 'svelte/transition';
 
 	export let data;
 
@@ -20,13 +19,24 @@
 <div>
 	<section>
 		<h1 class="text-5xl font-bold">Hi, I'm Miklós</h1>
-		<p>a fullstack developer, recently graduated at BUTE</p>
+		<p>
+			a fullstack developer, recently graduated at <a href="https://www.bme.hu/?language=en">BUTE</a
+			>
+		</p>
 	</section>
 
-	<ListProjects compact projects={data.projects.filter((x) => x.important)}>
-		<h2 slot="title" class="text-4xl font-medium">Recent Projects</h2>
-		<a slot="nav-button" href="/projects" class="text-xl font-medium">View all my projects</a>
-	</ListProjects>
+	<section class="flex flex-wrap gap-2">
+		<Construction />
+		I'm currently working on refactoring this website, so make sure to check back later for updates.
+		<Construction />
+	</section>
+
+	{#if data.projects}
+		<ListProjects compact projects={data.projects.filter((x) => x.important)}>
+			<h2 slot="title" class="text-4xl font-medium">Recent Projects</h2>
+			<a slot="nav-button" href="/projects" class="text-xl font-medium">View all my projects</a>
+		</ListProjects>
+	{/if}
 </div>
 
 <style lang="postcss">
