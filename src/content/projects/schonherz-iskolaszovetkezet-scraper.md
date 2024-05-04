@@ -19,43 +19,11 @@ This is a Golang module / CLi tool for scraping job ads on [Sch√∂nherz Iskolasz√
 
 ### CLI
 
-```golang
+```go
 go run ./cmd/main.go -city=budapest -jobtype=fejleszto---tesztelo -allDetail
 ```
 
-#### City
-
-possible values for City
-
-- budapest
-- debrecen
-- kecskemet
-- miskolc
-- pecs
-- szeged
-
-#### JobType
-
-possible values for JobType:
-
-- adminisztrativ
-- alkalmi---projekt-jellegu
-- fejleszto---tesztelo
-- gazdasagi
-- grafikus---designer
-- informatikai---support
-- muszaki
-- otthonrol-vegezheto
-- szaktudast-nem-igenylo-18-ev-alatt-
-- jobs-for-foreign-students
-
-#### allDetails
-
-allDetails means it's going to fetch all detail pages for the full job description
-
-### Module
-
-Example
+## Example
 
 ```go
 baseUrl := "https://schonherz.hu"
