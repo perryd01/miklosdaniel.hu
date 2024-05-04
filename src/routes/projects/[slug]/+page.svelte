@@ -18,6 +18,8 @@
 	<meta property="og:description" content={data.meta.description} />
 	<meta property="og:type" content="blog" />
 	<meta property="og:image" content={`${url}/projects/${data.slug}/preview.png`} />
+	<meta property="article:published_time" content={new Date(data.meta.date).toISOString()} />
+	<meta name="author" content="Miklos Daniel" />
 </svelte:head>
 
 <!-- This is a hidden image to be used as a preview for social media -->
