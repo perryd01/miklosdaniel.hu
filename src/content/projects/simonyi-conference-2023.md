@@ -1,5 +1,5 @@
 ---
-title: Simonyi Conference 2023
+title: My experience designing and developing a website for the 20th Simonyi Conference
 heroTitle: Simonyi Conference 2023
 description: My experience designing and developing a website for the 20th Simonyi Conference using Figma and Next.js
 date: '2024-05-4'
