@@ -1,8 +1,6 @@
 <script lang="ts">
 	import ListProjects from '$lib/components/projects/ListProjects.svelte';
 
-	import * as config from '$lib/config';
-	import { Construction } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 
 	export let data;
@@ -23,15 +21,9 @@
 		</p>
 	</section>
 
-	<section class="flex flex-wrap gap-2">
-		<Construction />
-		I'm currently working on refactoring this website, so make sure to check back later for updates.
-		<Construction />
-	</section>
-
 	{#if importantProjects}
 		<ListProjects compact projects={importantProjects}>
-			<h2 slot="title" class="text-4xl font-medium">Recent Projects</h2>
+			<h2 slot="title" class="text-4xl font-semibold mb-4 tracking-wide">Recent Projects</h2>
 			<a slot="nav-button" href="/projects" class="text-xl font-medium">View all my projects</a>
 		</ListProjects>
 	{/if}
