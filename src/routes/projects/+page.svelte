@@ -4,8 +4,13 @@
 	export let data: PageData;
 
 	import SvelteSeo from 'svelte-seo';
+	import * as config from '$lib/config';
 </script>
 
-<SvelteSeo title="Projects" description="A list of projects I've worked on" />
+<SvelteSeo
+	{...config.baseSeoConfig}
+	title={'Projects'}
+	description="A list of projects I've worked on"
+/>
 
 <ListProjects projects={data.projects} />

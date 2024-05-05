@@ -1,5 +1,11 @@
 # miklosdaniel.hu
 
+## 2.3.2
+
+### Patch Changes
+
+- c38f6a5: Revert svelte-seo from +layout file as child pages cannot override parent tags.
+
 ## 2.3.1
 
 ### Patch Changes
