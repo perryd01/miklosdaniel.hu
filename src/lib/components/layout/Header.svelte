@@ -21,7 +21,7 @@
 	export { className as class };
 </script>
 
-<div class="sticky top-0 px-4 pt-8 z-50">
+<div class="sticky top-0 px-4 pt-4 lg:pt-8 z-50">
 	<header
 		class={clsx(
 			'flex flex-row items-center justify-between text-xl py-2 backdrop-blur-sm rounded-lg shadow-sm bg-black/20 font-medium',
