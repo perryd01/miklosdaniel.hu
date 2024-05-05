@@ -1,5 +1,16 @@
 # miklosdaniel.hu
 
+## 2.3.1
+
+### Patch Changes
+
+- fc99b14: Fixed a case when scrolling to fast resulted in a white area on the bottom of the screen on mobile.
+- 42bbb57: Change text order when generating og:image on projects
+- 63116e4: Reduce top padding used by header component on mobile
+- 5503597: Removed "refactoring" text on main page. Added more bottom margin to "Recent Projects" text and increased font weight
+- d894de9: Use svelte-seo instead of manually write it with svelte:head
+- 36541cb: Added padding to the footer component, improved styling.
+
 ## 2.3.0
 
 ### Minor Changes
