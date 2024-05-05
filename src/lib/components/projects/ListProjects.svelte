@@ -13,7 +13,7 @@
 	<ul class:md:grid-cols-2={compact} class="projects">
 		{#each projects as project}
 			<li class="project">
-				<a href={`/projects/${project.slug}`} class="title line-clamp-1">{project.title}</a>
+				<a href={`/projects/${project.slug}`} class="title line-clamp-3">{project.title}</a>
 
 				<div class="flex flex-row items-center date">
 					<p>{project.readingTime.text}</p>
