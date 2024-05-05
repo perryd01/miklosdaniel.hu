@@ -14,10 +14,6 @@
 	onMount(() => (animateFlag = true));
 </script>
 
-<svelte:head>
-	<title>{config.title}</title>
-</svelte:head>
-
 <div>
 	<section>
 		<h1 class="text-5xl font-bold">Hi, I'm Miklós</h1>

@@ -5,7 +5,7 @@ description: Trying out a new programming called Vlang by implementing the Great
 date: '2022-04-17'
 categories:
   - vlang
-published: true
+published: false
 
 links:
   github: https://github.com/perryd01/v-gcd
