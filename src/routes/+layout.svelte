@@ -3,29 +3,7 @@
 
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
-	import SvelteSeo from 'svelte-seo';
-	import * as config from '$lib/config';
 </script>
-
-<SvelteSeo
-	title={config.title}
-	description={config.description}
-	openGraph={{
-		title: config.title,
-		description: config.description,
-		images: [{ url: `${config.url}/preview.png`, width: 1200, height: 630 }],
-		url: config.url,
-		type: 'website',
-		locale: 'en_US'
-	}}
-	twitter={{
-		card: 'summary_large_image',
-		site: '@daniel_miklos',
-		title: config.title,
-		description: config.description,
-		image: `${config.url}/preview.png`
-	}}
-/>
 
 <div class="flex flex-col justify-between font-inter min-h-screen gap-8 text-white">
 	<Header

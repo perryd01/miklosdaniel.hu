@@ -10,7 +10,12 @@
 	let animateFlag = false;
 
 	onMount(() => (animateFlag = true));
+
+	import * as config from '$lib/config';
+	import SvelteSeo from 'svelte-seo';
 </script>
+
+<SvelteSeo {...config.baseSeoConfig} />
 
 <div>
 	<section>
