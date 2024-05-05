@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  svelte-seo@1.6.0:
+    hash: tg5pbpedaorvtuvkowimi7jd2y
+    path: patches/svelte-seo@1.6.0.patch
+
 dependencies:
   lucide-svelte:
     specifier: ^0.364.0
@@ -91,6 +96,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.6.9
     version: 3.6.9(postcss@8.4.38)(svelte@4.2.12)
+  svelte-seo:
+    specifier: ^1.6.0
+    version: 1.6.0(patch_hash=tg5pbpedaorvtuvkowimi7jd2y)(typescript@5.4.3)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
@@ -4156,6 +4164,14 @@ packages:
       yoga-wasm-web: 0.3.3
     dev: true
 
+  /schema-dts@1.1.2(typescript@5.4.3):
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+    dependencies:
+      typescript: 5.4.3
+    dev: true
+
   /semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
@@ -4577,6 +4593,15 @@ packages:
       svelte: 4.2.12
       typescript: 5.4.3
     dev: true
+
+  /svelte-seo@1.6.0(patch_hash=tg5pbpedaorvtuvkowimi7jd2y)(typescript@5.4.3):
+    resolution: {integrity: sha512-xgyJ2evRrgukCIOl4EMNrXyKXAQxJVYchqw9iTG1pv143bQ9vnI/wrrI1ew+fOLVRnU7yuJVdvgKUSD+sZXXtg==}
+    dependencies:
+      schema-dts: 1.1.2(typescript@5.4.3)
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+    patched: true
 
   /svelte@4.2.12:
     resolution: {integrity: sha512-d8+wsh5TfPwqVzbm4/HCXC783/KPHV60NvwitJnyTA5lWn1elhXMNWhXGCJ7PwPa8qFUnyJNIyuIRt2mT0WMug==}
