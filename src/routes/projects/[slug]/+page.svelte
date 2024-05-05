@@ -2,6 +2,7 @@
 	import ProjectLinks from '$lib/components/projects/ProjectLinks.svelte';
 	import { formatDate } from '$lib/utils';
 	import { Dot } from 'lucide-svelte';
+	import SvelteSeo from 'svelte-seo';
 
 	export let data;
 
@@ -10,17 +11,32 @@
 	import './style.css';
 </script>
 
-<svelte:head>
-	<title>{data.meta.title}</title>
-	<meta name="description" content={data.meta.description} />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:type" content="blog" />
-	<meta property="og:image" content={`${url}/projects/${data.slug}/preview.png`} />
-	<meta property="article:published_time" content={new Date(data.meta.date).toISOString()} />
-	<meta name="author" content="Miklos Daniel" />
-</svelte:head>
+<SvelteSeo
+	title={data.meta.title}
+	description={data.meta.description}
+	canonical={url + '/projects/' + data.slug}
+	keywords={data.meta.categories?.join(', ')}
+	openGraph={{
+		title: data.meta.title,
+		description: data.meta.description,
+		images: [{ url: `${url}/projects/${data.slug}/preview.png`, width: 1200, height: 630 }],
+		url: `${url}/projects/${data.slug}`,
+		type: 'article',
+		locale: 'en_US',
+		article: {
+			author: ['Miklos Daniel'],
+			published_time: new Date(data.meta.date).toISOString(),
+			tag: data.meta.categories
+		}
+	}}
+	twitter={{
+		card: 'summary_large_image',
+		site: '@daniel_miklos',
+		title: data.meta.title,
+		description: data.meta.description,
+		image: `${url}/projects/${data.slug}/preview.png`
+	}}
+/>
 
 <!-- This is a hidden image to be used as a preview for social media -->
 <img src="/projects/{data.slug}/preview.png" alt="Preview" class="hidden" />
